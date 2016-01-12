@@ -1,5 +1,8 @@
 # Mouse-Control-with-hand-finger-gesture-OpenCV
 
+Blog - http://udit043.blogspot.in/2016/01/controlling-mouse-with-finger-gesture.html
+Youtube - https://youtu.be/i4HqZAH_TZU
+
 In this repo i will show you how to control mouse with finger(index) gesture.
 I use OpenCV for gesture analyzing , i use some color strip , pink color is used for controling the position , yellow color is used for left click and blue color is used for right click.
 
