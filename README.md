@@ -1,6 +1,7 @@
 # Mouse-Control-with-hand-finger-gesture-OpenCV
 
 Blog - http://udit043.blogspot.in/2016/01/controlling-mouse-with-finger-gesture.html
+
 Youtube - https://youtu.be/i4HqZAH_TZU
 
 In this repo i will show you how to control mouse with finger(index) gesture.
