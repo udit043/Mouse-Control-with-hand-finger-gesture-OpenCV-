@@ -3,6 +3,7 @@
 Blog - http://udit043.blogspot.in/2016/01/controlling-mouse-with-finger-gesture.html
 
 Youtube - https://youtu.be/i4HqZAH_TZU
+
 Edited video - https://www.youtube.com/watch?v=QlLUvOuWeLE
 
 In this repo i will show you how to control mouse with finger(index) gesture.
