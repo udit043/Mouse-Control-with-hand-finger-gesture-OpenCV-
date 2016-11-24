@@ -6,14 +6,13 @@ Youtube - https://youtu.be/i4HqZAH_TZU
 
 Edited video - https://www.youtube.com/watch?v=QlLUvOuWeLE
 
-In this repo i will show you how to control mouse with finger(index) gesture.
-I use OpenCV for gesture analyzing , i use some color strip , pink color is used for controling the position , yellow color is used for left click and blue color is used for right click.
+I have created a project in which I have opearted mouse with finger gesture.
+I have used OpenCV for gesture analyzing, some color strips for recognizing operations to be performed.
+Pink color have been used for controling the mouse position, yellow color for left click and blue color for right click.
 
-I placed pink color strip in my Proximal Phalanx area.
-Placed yellow color strip in my Distal Phalanx area , it can be used for dragging.
-Placed blue color strip behind my Middle Phalanx area.
+I have placed pink colored strip in my Proximal Phalanx area, yellow colored strip in my Distal Phalanx area, blue colored strip behind my Middle Phalanx area.
 
-So now , Let's play Snooker 147 and then chess and then perform cut,copy,paste operations on a file/folder by dragging.
+Let's play Snooker 147 and then chess and then perform cut, copy, paste operations on a file/folder by dragging.
 
 Strips on my finger : 
 ![1 1](https://cloud.githubusercontent.com/assets/9850882/12263045/2c26bf8c-b952-11e5-9593-d643fea62717.jpg)
