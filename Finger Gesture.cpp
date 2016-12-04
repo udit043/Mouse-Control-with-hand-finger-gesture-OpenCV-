@@ -4,8 +4,6 @@
 // Pink   - H-(228-230) S-(127-130) L-(140-143)         R-207 G-93 B-124
 // Yellow - H-(38-40) S-(217-226) L-(80-88)             R-170 G-168 B-7
 
-// cvScalar(H,S,L) 
-// I am newbie in OpenCV and i completed this project with many mistakes but now i will optimize it and suggestion are welcomed.
 #include <opencv/cv.h>
 #include <opencv/cxcore.h>
 #include <opencv/highgui.h>
@@ -19,7 +17,7 @@ int main( int argc, char** argv )
 {
 	HANDLE  hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-        ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
+	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
     
 	unsigned long long int flag1,flag2,flag3,flag4;
 	long long int x,x1,y,y1;
@@ -407,24 +405,3 @@ int main( int argc, char** argv )
 	cvReleaseCapture( &capture);
 	cvDestroyAllWindows();
 }
-
-/*if(posX <= 109 && posY > 80)
-							{
-								x1=p.x-5;
-							}
-							else if(posX <= 80 && posY > 60)
-							{
-								x1=p.x-10;
-							}
-							else if(posX <= 60 && posY > 40)
-							{
-								x1=p.x-20;
-							}
-							else if(posX <= 40 && posY > 20)
-							{
-								x1=p.x-40;
-							}
-							else if(posX <= 20 && posY > 0)
-							{
-								x1=p.x-60;
-							}*/
