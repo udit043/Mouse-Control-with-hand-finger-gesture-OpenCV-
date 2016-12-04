@@ -15,29 +15,29 @@ using namespace cv;
 
 int main( int argc, char** argv ) 
 {
-	HANDLE  hConsole;
-	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
+    HANDLE  hConsole;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
     
-	unsigned long long int flag1,flag2,flag3,flag4;
-	long long int x,x1,y,y1;
+    unsigned long long int flag1,flag2,flag3,flag4;
+    long long int x,x1,y,y1;
 	
-	flag1=flag2=flag3=flag4=0;
-	
-	int c = 0;
+    flag1=flag2=flag3=flag4=0;
+    int c = 0;
+    
     CvCapture* capture = cvCaptureFromCAM(0);
     
-	if(!cvQueryFrame(capture))
-	{ 
-		cout<<"Video camera capture status: OK"<<endl;
-	}
-	else
-	{
-		cout<<"Video capture failed, please check the camera."<<endl;
-	}
+    if(!cvQueryFrame(capture))
+    { 
+	cout<<"Video camera capture status: OK"<<endl;
+    }
+    else
+    {
+	cout<<"Video capture failed, please check the camera."<<endl;
+    }
 	
 	CvSize sz = cvGetSize(cvQueryFrame( capture));
-	IplImage* img    = cvCreateImage( sz,8, 3 );
+	IplImage* img = cvCreateImage( sz,8, 3 );
     
     IplImage* imgHSV = cvCreateImage(cvSize(300,310), 8, 3);
 	IplImage* imgThreshed1 = cvCreateImage(cvSize(300,310), 8, 1);
@@ -83,7 +83,6 @@ int main( int argc, char** argv )
 			
 				if(max_area > 50)
 				{
-					
 					CvPoint pt0;
 					CvMemStorage* storage1 = cvCreateMemStorage();
 					CvMemStorage* storage2 = cvCreateMemStorage(0);
@@ -133,7 +132,7 @@ int main( int argc, char** argv )
         }
         else
         {
-        	
+        	//nothing
         }
         
         //  -- blue --   -- blue --   -- blue --   -- blue --   -- blue --   -- blue --   -- blue --
@@ -247,7 +246,7 @@ int main( int argc, char** argv )
 					int posX=moment10/area;
 					int posY=moment01/area;
 					
-					GetCursorPos(&l);
+					GetCursorPos(&l);  //Get current position of cursor
 					
 					if(posX >= 0 && posX < 110)
 					{
@@ -255,7 +254,7 @@ int main( int argc, char** argv )
 						{
 							x1=l.x-3;
 							y1=l.y-3;
-							SetCursorPos(x1,y1);
+							SetCursorPos(x1,y1);  //Set the position of cursor according to the mapping
 							SetConsoleTextAttribute(hConsole, 13);
 							cout<<"Pink Lady\n";
 						}
@@ -383,16 +382,12 @@ int main( int argc, char** argv )
         	cvReleaseMemStorage( &storage );
         }
         
-        
         cvRectangle(img,cvPoint(2,2),cvPoint(295,305),CV_RGB(255,255,255),1,CV_AA,0);
-		
 		cvLine(img, cvPoint(110,0), cvPoint(110,308),CV_RGB(0,255,0),1, CV_AA, 0 );
 		cvLine(img, cvPoint(190,0), cvPoint(190,308),CV_RGB(0,255,0),1, CV_AA, 0 );
-		
 		cvLine(img, cvPoint(0,110), cvPoint(298,110),CV_RGB(255,255,0),1, CV_AA, 0 );
 		cvLine(img, cvPoint(0,190), cvPoint(298,190),CV_RGB(255,255,0),1, CV_AA, 0 );
-		
-		
+
 	//	cvNamedWindow( "imgHSV", CV_WINDOW_AUTOSIZE );cvShowImage( "imgHSV", imgHSV );
 	//	cvNamedWindow( "imgThreshed1", CV_WINDOW_AUTOSIZE );cvShowImage( "imgThreshed1", imgThreshed1 );
 	//	cvNamedWindow( "imgThreshed2", CV_WINDOW_AUTOSIZE );cvShowImage( "imgThreshed2", imgThreshed2 );
