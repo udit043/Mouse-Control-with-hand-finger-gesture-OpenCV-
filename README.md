@@ -6,7 +6,7 @@ Youtube - https://youtu.be/i4HqZAH_TZU
 
 Edited video - https://www.youtube.com/watch?v=QlLUvOuWeLE
 
-I have created a project in which I have opearted mouse with finger gesture.
+Nitish and me have created a project in which I have opearted mouse with finger gesture.
 I have used OpenCV for gesture analyzing, some color strips for recognizing operations to be performed.
 Pink color have been used for controling the mouse position, yellow color for left click and blue color for right click.
 
