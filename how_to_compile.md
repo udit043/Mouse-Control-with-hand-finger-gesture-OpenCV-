@@ -70,8 +70,8 @@ opencv_imgproc2413.dll
 ![image](https://user-images.githubusercontent.com/9850882/32577112-dec6f18e-c4fe-11e7-8777-46f5d2ef5a7c.png)
 
 Now go to 'Project' -> 'Project Options...' and click on 'Parameters' and 'Add library or object'
-![image](https://user-images.githubusercontent.com/9850882/32577135-ed7238c4-c4fe-11e7-9b91-659a22cc65e1.png)
-![image](https://user-images.githubusercontent.com/9850882/32577140-f1dd8184-c4fe-11e7-8a0f-edc7d88edc36.png)
+![image](https://user-images.githubusercontent.com/9850882/32648263-16ddbbd0-c61b-11e7-8278-64cdb82ededb.png)
+![image](https://user-images.githubusercontent.com/9850882/32648330-504ed886-c61b-11e7-9150-0ca2692a35f2.png)
 
 Now navigate to the folder where main.cpp and library files are residing and select 
 
@@ -81,13 +81,13 @@ opencv_highgui2413.lib
 
 opencv_imgproc2413.lib
 
-![image](https://user-images.githubusercontent.com/9850882/32577252-3983f180-c4ff-11e7-9685-b41c67d1a886.png)
-![image](https://user-images.githubusercontent.com/9850882/32577307-6dbc5956-c4ff-11e7-80e3-52f9e4b15f90.png)
+![image](https://user-images.githubusercontent.com/9850882/32648343-6106bc84-c61b-11e7-9dbb-1cf6ac907a28.png)
+![image](https://user-images.githubusercontent.com/9850882/32648362-73bf4832-c61b-11e7-90fa-1cff5908595b.png)
 
 And now click on 'Compile'
-![image](https://user-images.githubusercontent.com/9850882/32577323-7c43174e-c4ff-11e7-99b5-7a7226830c84.png)
+![image](https://user-images.githubusercontent.com/9850882/32648389-87ebb534-c61b-11e7-957d-088708f3b23e.png)
 
 And at last you will see 'Compile Log' wihout any error and warning.
-![image](https://user-images.githubusercontent.com/9850882/32577327-8231a918-c4ff-11e7-8751-73b2a96414c7.png)
+![image](https://user-images.githubusercontent.com/9850882/32648392-8aa88f40-c61b-11e7-8eb5-a7954676d9f7.png)
 
 That's it :)
